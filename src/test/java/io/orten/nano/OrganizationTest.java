@@ -1,5 +1,6 @@
 package io.orten.nano;
 
+import io.orten.nano.model.Organization;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -37,7 +38,9 @@ public class OrganizationTest {
 public void saveorganaization()
 
     {
-
+        Organization org= new Organization("67","microsoft", "NY", "nwerme", "mdf@gmail.com", "newpassword45", "brooklyn",
+                "154678", "very successful organisation");
+        s.save(org);
     }
 
 
